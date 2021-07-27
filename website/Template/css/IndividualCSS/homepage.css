@@ -1,0 +1,209 @@
+:root{
+    --picture1: url("/website/Template/assets/images/Curiosidades/Artigo3/glasses-213156_1280.jpg");
+    --picture2: url("/website/Template/assets/images/Historia/Artigo1/5980df7227fa6b04b22af630.jpg");
+    --picture3: url("/website/Template/assets/images/Producao/Artigo1/honey-823614_1920.jpg");
+    --picture4: url("/website/Template/assets/images/Receitas/Artigo3/drink-2782192_1280.jpg");
+
+}
+
+@keyframes changecard1{
+    from{
+        background-color: black;
+        background-image: none;
+    }
+    to{
+        background-color: transparent;
+        background-image: var(--picture2);
+    }
+}
+
+@keyframes changecard2{
+    from{
+        background-color: black;
+        background-image: none;
+    }
+    to{
+        background-color: transparent;
+        background-image: var(--picture1);
+    }
+}
+
+@keyframes changecard3{
+    from{
+        background-color: black;
+        background-image: none;
+    }
+    to{
+        background-color: transparent;
+        background-image: var(--picture3);
+    }
+}
+
+@keyframes changecard4{
+    from{
+        background-color: black;
+        background-image: none;
+    }
+    to{
+        background-color: transparent;
+        background-image: var(--picture4);
+    }
+}
+
+
+
+
+.title_container{
+    text-align: center;
+    margin-bottom: 2.8vw;
+}
+.title_container h5{
+    font-family: B_S;
+    font-size: 2.43vw;
+    text-transform: uppercase;
+    line-height: 4vw;
+}
+.title_container specialh5{
+    font-size: 3.8vw;
+    text-transform: uppercase;
+}
+
+
+
+
+.section_cards{
+    /* border: 0.2vw solid; */
+    margin-bottom: 1.8vw;
+    margin-top: 1.8vw;
+}
+.section_cards h3{
+    font-family: SB_S;
+    font-size: 2.5vw;
+}
+.section_cards p{
+    /* background-color: black; */
+    color: #202020;
+    font-family: R_SS;
+    font-size: 1.1vw;
+}
+.section_cards a{
+    color: white;
+    font-family: R_S;
+    font-size: 1.5vw;
+    text-decoration: none;
+    letter-spacing: 0.05vw;
+    word-spacing: 0.15vw;
+
+    transition: 300ms;
+}
+.section_cards a:hover{
+    color: #A89116;
+
+}
+
+.publish_card{
+    margin-top: 0.9vw;
+    height: 10vw;
+    padding: 0.8vw;
+    background-color: black;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    
+    animation-fill-mode: both;
+    animation-duration: 750ms;
+}
+
+#history_card:hover{
+    animation-name: changecard1;
+
+    background-position-y: 40%;
+}
+#curiosity_card:hover{
+    animation-name: changecard2;
+
+    background-position-y: 45%;
+}
+#production_card:hover{
+    animation-name: changecard3;
+
+    background-position-y: 29%;
+}
+#recipe_card:hover{
+    animation-name: changecard4;
+
+    background-position-y: 30%;
+}
+
+
+
+
+
+
+
+@media (max-width: 1050px){
+    #history_card{  
+        background: url("/website/Template/assets/images/Historia/Artigo1/5980df7227fa6b04b22af630.jpg");
+        background-size: cover;
+        background-position-y: 40%;
+
+    }
+    #curiosity_card{  
+        background: url("/website/Template/assets/images/Curiosidades/Artigo3/glasses-213156_1280.jpg");
+        background-size: cover;
+        background-position-y: 45%;
+
+    }
+    #production_card{  
+        background: url("/website/Template/assets/images/Producao/Artigo1/honey-823614_1920.jpg");
+        background-size: cover;
+        background-position-y: 29%;
+
+    }
+    #recipe_card{  
+        background: url("/website/Template/assets/images/Receitas/Artigo3/drink-2782192_1280.jpg");
+        background-size: cover;
+        background-position-y: 30%;
+
+    }
+}
+
+
+@media (max-width: 700px){
+
+    .title_container{
+        margin-bottom: 4vw;
+        margin-top: 5vw;
+    }
+    .title_container h5{
+        font-size: 5.8vw;
+        line-height: 8vw;
+    }
+    .title_container specialh5{
+        font-size: 9vw;
+    }
+
+
+
+    .publish_card{
+        height: 24vw;
+    }
+    .section_cards{
+        margin-bottom: 3.5vw;
+        margin-top: 8vw;
+    }
+    .section_cards h3{
+        font-size: 6vw;
+    }
+    .section_cards p{
+        font-size: 2.7vw;
+        margin-bottom: 1.8vw;
+    }
+    .section_cards a{
+        font-size: 4.8vw;
+        letter-spacing: 0.05vw;
+        word-spacing: 0.15vw;
+    }
+}

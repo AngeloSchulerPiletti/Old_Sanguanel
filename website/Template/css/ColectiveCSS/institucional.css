@@ -1,0 +1,335 @@
+/* REGULA A FLEXIBILIDADE DA PÁGINA */
+#mainer {
+  display: flex;
+  /* background-color: aqua; */
+}
+#content_container {
+  /* background-color: #D05000D0; */
+  margin-left: 300px;
+  flex-grow: 1;
+}
+
+/* ESTILO CAIXA DE ÚLTIMOS POSTS */
+#last_posts {
+  background-color: #ededed;
+  padding: 10px;
+  padding-bottom: 20px;
+
+  border-style: solid;
+  border-color: #606060;
+  border-width: 1px;
+  outline: none;
+  box-shadow: none;
+
+  height: fit-content;
+  width: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+#last_posts h6 {
+  font-family: M_S;
+  font-size: 1.4vw;
+  margin-bottom: 1.4vw;
+}
+#last_posts a {
+  text-decoration: none;
+  color: black;
+
+  transition: 200ms;
+}
+#last_posts p {
+  font-family: R_SS;
+  font-size: 1vw;
+}
+#last_posts a:hover {
+  color: #a89116;
+}
+.aside_hr {
+  width: 90%;
+  margin-top: 0.3vw;
+  margin-bottom: 0.3vw;
+}
+/* FIM DO ESTILO DA CAIXA DE ÙLTIMOS POSTS */
+
+/* FORMATAÇÃO DE TEXTO */
+/* Formatação de Containers */
+.excert {
+  margin-bottom: 4vw;
+}
+.topic {
+  margin-bottom: 2.2vw;
+}
+.mono_p {
+  margin-bottom: 1.4vw;
+  margin-top: 1vw;
+}
+.list_container {
+  margin: 0.5vw 1vw 1vw 1vw;
+}
+
+/* Formatação de Elementos */
+.title,
+.subtitle,
+.point {
+  font-family: B_S;
+  text-transform: capitalize;
+  color: black;
+}
+.paragraph,
+.item {
+  font-family: R_SS;
+  text-align: justify;
+}
+.title {
+  font-size: 2.4vw;
+}
+.subtitle {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+
+  margin-top: 1vw;
+}
+.point {
+  font-size: 1.6vw;
+}
+.paragraph {
+  font-size: 1.4vw;
+  color: black;
+  text-indent: 1.2em;
+}
+.item {
+  font-size: 1.2vw;
+  color: #202020;
+  list-style: none;
+  text-indent: 2em;
+
+  margin-bottom: 0.5vw;
+}
+
+#content_container a {
+  color: #a89116;
+  text-decoration: none;
+
+  transition-property: color;
+  transition: 300ms;
+}
+#content_container a:hover {
+  color: black;
+
+  transition: 800ms;
+}
+/* FIM DA FORMATAÇÃO DE TEXTO */
+
+#mainer p[cite] {
+  font-family: SB_SS;
+  text-align: center;
+  font-size: 1.3vw;
+  display: inline;
+}
+#mainer p[cite]::after {
+  content: close-quote;
+  font-family: SB_S;
+  font-size: 2.4vw;
+}
+#mainer p[cite]::before {
+  content: open-quote;
+  font-family: SB_S;
+  font-size: 2.4vw;
+}
+
+#obrigado {
+  font-family: R_SS;
+  font-size: 1vw;
+  margin-top: 15vw;
+}
+
+@media (max-width: 1670px) {
+}
+@media (max-width: 1270px) {
+  #content_container {
+    margin-left: 200px;
+  }
+  #last_posts {
+    width: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media (max-width: 1050px) {
+  /* FORMATAÇÃO DE TEXTO */
+  /* Formatação de Containers */
+  .excert {
+    margin-bottom: 5.5vw;
+  }
+  .topic {
+    margin-bottom: 3vw;
+  }
+  /* .mono_p{
+    margin-bottom: 1.4vw;
+    margin-top: 1vw;
+} */
+  .list_container {
+    margin: 1.5vw 1.2vw 1vw 1.2vw;
+  }
+
+  /* Formatação de Elementos */
+  .title {
+    font-size: 3.2vw;
+  }
+  .subtitle {
+    font-size: 2.2vw;
+  }
+  .point {
+    font-size: 1.8vw;
+  }
+  .paragraph {
+    font-size: 1.7vw;
+  }
+  .item {
+    font-size: 1.5vw;
+  }
+
+  /* FIM DA FORMATAÇÃO DE TEXTO */
+
+  #content_container {
+    margin-left: 50px;
+  }
+  #last_posts {
+    width: 125px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  #last_posts h6 {
+    font-size: 16px;
+  }
+  #lasts_posts p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  #content_container {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+  #last_posts {
+    /* width: 125px;    
+        margin-left: 25px;
+        margin-right: 25px; */
+
+    display: none;
+  }
+
+
+
+
+
+  /* FORMATAÇÃO DE TEXTO */
+  /* Formatação de Containers */
+  .excert {
+    margin-bottom: 5.8vw;
+  }
+  .topic {
+    margin-bottom: 4.2vw;
+  }
+  /* .mono_p{
+    margin-bottom: 1.4vw;
+    margin-top: 1vw;
+} */
+  .list_container {
+    margin: 1vw 1.2vw 1vw 1.2vw;
+  }
+
+  /* Formatação de Elementos */
+  .title {
+    font-size: 3.6vw;
+  }
+  .subtitle {
+    font-size: 3vw;
+
+    margin-top: 1.8vw;
+  }
+  .point {
+    font-size: 2.8vw;
+  }
+  .paragraph {
+    font-size: 2.8vw;
+  }
+  .item {
+    font-size: 2.5vw;
+    margin-bottom: 0.5vw;
+  }
+  /* FIM DA FORMATAÇÃO DE TEXTO */
+
+
+
+
+
+  #mainer p[cite] {
+    font-size: 2.2vw;
+  }
+  #mainer p[cite]::after {
+    content: close-quote;
+    font-family: SB_S;
+    font-size: 4vw;
+  }
+  #mainer p[cite]::before {
+    content: open-quote;
+    font-family: SB_S;
+    font-size: 4vw;
+  }
+
+  #obrigado {
+    font-family: R_SS;
+    font-size: 2vw;
+    margin-top: 15vw;
+  }
+}
+@media (max-width: 500px) {
+  #content_conteiner {
+    margin-left: 2.6vw;
+    margin-right: 2.6vw;
+  }
+
+
+  /* FORMATAÇÃO DE TEXTO */
+  /* Formatação de Containers */
+  .excert {
+    margin-bottom: 6vw;
+  }
+  .topic {
+    margin-bottom: 4.5vw;
+  }
+  /* .mono_p{
+    margin-bottom: 1.4vw;
+    margin-top: 1vw;
+} */
+  .list_container {
+    margin: 1.8vw 1.4vw 1vw 1.4vw;
+  }
+
+  /* Formatação de Elementos */
+  .title {
+    font-size: 4vw;
+  }
+  .subtitle {
+    font-size: 3vw;
+
+    margin-top: 2vw;
+  }
+  .point {
+    font-size: 3vw;
+  }
+  .paragraph {
+    font-size: 3vw;
+  }
+  .item {
+    font-size: 2.6vw;
+    margin-bottom: 1.5vw;
+  }
+  /* FIM DA FORMATAÇÃO DE TEXTO */
+
+}
+@media (max-width: 300px) {
+}

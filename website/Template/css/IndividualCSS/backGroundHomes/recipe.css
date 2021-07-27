@@ -1,0 +1,12 @@
+#card1{
+    background-image: url("../../../assets/images/Receitas/Artigo3/drink-2782192_1280.jpg");
+    background-position-y: 35%;
+}
+#card2{
+    background-image: url("../../../assets/images/Receitas/Artigo2/cocktails-1149171_1280.jpg");
+    background-position-y: 70%; 
+}
+#card3{
+    background-image: url("../../../assets/images/Receitas/Artigo1/woman-1064664_1920.jpg");
+    background-position-y: 40%;
+}

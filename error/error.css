@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 5vw;
+}
+p{
+    font-size: 2vw;
+    text-align: justify;
+
+    margin-bottom: 3vw;
+}
+a{
+    text-decoration: none;
+    color: #A89116;
+
+    transition-property: color;
+    transition: 300ms;
+}
+a:hover{
+    color: #806300;
+}
+img{
+    width: 12vw;
+    max-width: 150px;
+}
+
+
+#advice_container{
+    margin-top: 10vw;
+    padding-left: 30vw;
+    padding-right: 30vw;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+#flex_img{
+    display: flex;
+    align-items: baseline;
+
+    margin-bottom: 5vw;
+}
